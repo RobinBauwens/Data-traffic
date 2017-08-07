@@ -4,7 +4,7 @@
 
 ## Matplotlib
 
-- [ModuleError](#https://stackoverflow.com/questions/18176591/importerror-no-module-named-matplotlib-pyplot)
+- [ModuleError](https://stackoverflow.com/questions/18176591/importerror-no-module-named-matplotlib-pyplot)
 
 - [Install via pip](https://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv)
 
@@ -17,6 +17,12 @@
  ## Python
  
  - [str.replace()](https://www.tutorialspoint.com/python/string_replace.htm)
+ 
+ - [RegEx](https://stackoverflow.com/questions/19431063/python-re-sub-to-replace-3-or-more-of-same-character-with-1)
+ 
+ - [Datetime](https://docs.python.org/2/library/datetime.html)
+ 
+ - [strptime datetime](https://docs.python.org/2/library/datetime.html#datetime.datetime.strptime)
 
  ## Perl
  
