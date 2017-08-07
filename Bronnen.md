@@ -1,6 +1,8 @@
 # Bronnen
 
-- [Installeer Node.JS](http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/)
+<!-- - [Installeer Node.JS](http://thisdavej.com/beginners-guide-to-installing-node-js-on-a-raspberry-pi/) -->
+
+- [Network statistics](https://superuser.com/questions/356907/how-to-get-real-time-network-statistics-in-linux-with-kb-mb-bytes-format-and-for)
 
 ## Matplotlib
 
