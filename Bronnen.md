@@ -4,6 +4,8 @@
 
 ## Matplotlib
 
+- [ModuleError](#https://stackoverflow.com/questions/18176591/importerror-no-module-named-matplotlib-pyplot)
+
 - [Install via pip](https://stackoverflow.com/questions/9829175/pip-install-matplotlib-error-with-virtualenv)
 
 - [Install via pip (2)](https://stackoverflow.com/questions/25593512/cant-install-matplotlib-using-pip)
