@@ -4,6 +4,8 @@
 
 - [Network statistics](https://superuser.com/questions/356907/how-to-get-real-time-network-statistics-in-linux-with-kb-mb-bytes-format-and-for)
 
+- [Locatie packets per second-bestanden](http://xmodulo.com/measure-packets-per-second-throughput-high-speed-network-interface.html)
+
 ## Matplotlib
 
 - [ModuleError](https://stackoverflow.com/questions/18176591/importerror-no-module-named-matplotlib-pyplot)
