@@ -18,7 +18,7 @@ while (<>) {
        #printf "%02d:%02d:%02d %10.2f Bps\n", (localtime())[2,1,0],$bps;
        
     
-       printf "%04d/%02d/%02d %02d:%02d:%02d %10.2fBps\n", (((localtime())[5]+1900),((localtime())[4]+1),(localtime())[3,2,1,0],$bps); # ook met extra haakjes er rond
+       printf "%04d/%02d/%02d %02d:%02d:%02d %10.2f Bps\n", (((localtime())[5]+1900),((localtime())[4]+1),(localtime())[3,2,1,0],$bps); # ook met extra haakjes er rond
 
        #$datestring = localtime();
 	   #print "$datestring ";
