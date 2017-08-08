@@ -10,11 +10,11 @@ $x = time() * 1000;
 
 //$y=exec("/home/pi/data_traffic/bitspersec.sh"); // duurt te lang om waarden op te halen?
 
-$tr=exec("cat /sys/class/net/wlan0/statistics/tx_bytes");
+$rec=exec("cat /sys/class/net/wlan0/statistics/rx_packets");
 sleep(1);
-$tr2=exec("cat /sys/class/net/wlan0/statistics/tx_bytes");
+$rec2=exec("cat /sys/class/net/wlan0/statistics/rx_packets");
 
-$y=$tr2-$tr; //ontvangen bytes
+$y=$rec2-$rec; //ontvangen bytes
 
 // Create a PHP array and echo it as JSON
 $ret = array($x, $y);

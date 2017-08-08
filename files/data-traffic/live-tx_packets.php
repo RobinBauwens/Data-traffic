@@ -10,9 +10,9 @@ $x = time() * 1000;
 
 //$y=exec("/home/pi/data_traffic/bitspersec.sh"); // duurt te lang om waarden op te halen?
 
-$tr=exec("cat /sys/class/net/wlan0/statistics/tx_bytes");
+$tr=exec("cat /sys/class/net/wlan0/statistics/tx_packets");
 sleep(1);
-$tr2=exec("cat /sys/class/net/wlan0/statistics/tx_bytes");
+$tr2=exec("cat /sys/class/net/wlan0/statistics/tx_packets");
 
 $y=$tr2-$tr; //ontvangen bytes
 
