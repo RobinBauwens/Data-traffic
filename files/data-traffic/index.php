@@ -4,12 +4,34 @@ $path    = '/sys/class/net';
 $files = scandir($path);
 $files = array_diff(scandir($path), array('.', '..'));
 
-echo "<select id='myselect'>";
+/*
+echo "<ul>";
 foreach ($files as $value) {
-    echo "<option value=$value>$value</option>";
+    echo "<li value=$value>$value</li>";
 }
-echo "</select>";
+echo "</ul>";
 
+
+
+
+//Indicates the number of multicast packets received by this network device.
+//echo "<br>";
+echo "<p>Output van /proc/net/arp:</p>";
+
+$y=exec("cat /proc/net/arp",$output,$error);
+
+echo "<ul>";
+
+while(list(,$y) = each($output)){
+echo "<li>",$y, "</li>\n";
+}
+if($error){
+echo "Error : $error<br>\n";
+exit;
+}
+*/
+
+echo "<h3>RX_DROPPED: ", exec("cat /sys/class/net/wlan0/statistics/rx_dropped"),"</h3>"; 
 
 //https://stackoverflow.com/questions/15774669/list-all-files-in-one-directory-php
 ?>

@@ -2,9 +2,11 @@ body {
  background-image: url("../files/dark-triangles.png");
  /* https://www.toptal.com/designers/subtlepatterns/dark-triangles/ */
  font-family: GothamMedium;
+ color: white;
+
 }
 
-div {
+div,ul, ul li,p {
  color: white;
 }
 

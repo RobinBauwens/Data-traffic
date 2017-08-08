@@ -4,7 +4,7 @@ header("Content-type: text/json");
 
 // The x value is the current JavaScript time, which is the Unix time multiplied 
 // by 1000.
-$x = time() * 1000;
+$x = (time() * 1000) + 7200; //time() geeft epoch waarde terug (UNIX-timestamp)
 // The y value is a random number
 
 

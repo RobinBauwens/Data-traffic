@@ -72,6 +72,11 @@ window.onload= function(){
     });
 
 
+
+
+
+
+
   function requestPackets(){
   	requestDataRX_Packets();
   	requestDataTX_Packets();
@@ -81,6 +86,7 @@ window.onload= function(){
   	requestDataRX_Bytes();
   	requestDataTX_Bytes();
   }
+
 
     function requestDataRX_Bytes() {
     $.ajax({
@@ -153,10 +159,6 @@ window.onload= function(){
         cache: false
     });
 }
-
-$('#myselect').on('change', function() {
-  alert( this.value );
-})
  
 
 
@@ -169,7 +171,10 @@ $('#myselect').on('change', function() {
 //https://stackoverflow.com/questions/11179406/jquery-get-value-of-select-onchange
 //https://unix.stackexchange.com/questions/125400/how-can-i-find-available-network-interfaces
 
+//https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics
+
 // Lay-out aanpassen
+// Tijd loopt nog op GMT, nog omzetten naar CET 
 };
 
 
