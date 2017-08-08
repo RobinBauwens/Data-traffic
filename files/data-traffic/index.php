@@ -5,11 +5,16 @@ $files = scandir($path);
 $files = array_diff(scandir($path), array('.', '..'));
 
 /*
+
+// Toon alle beschikbare netwerkinterfaces
+
 echo "<ul>";
 foreach ($files as $value) {
     echo "<li value=$value>$value</li>";
 }
 echo "</ul>";
+
+
 
 
 
