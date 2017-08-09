@@ -12,6 +12,7 @@
 -[Chart types Highcharts](https://www.highcharts.com/docs/chart-and-series-types/chart-types)
 -[jQuery onChange value](https://stackoverflow.com/questions/11179406/jquery-get-value-of-select-onchange)
 -[Netwerkinterfaces](https://unix.stackexchange.com/questions/125400/how-can-i-find-available-network-interfaces)
+-[Gebruikte netwerkinterfaces tonen](https://stackoverflow.com/questions/596590/how-can-i-get-the-current-network-interface-throughput-statistics-on-linux-unix)
 
 <!--
 ## Matplotlib (niet gebruikt)
