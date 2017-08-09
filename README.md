@@ -6,3 +6,5 @@ Er worden een aantal statistieken (bestanden) beschikbaar gesteld in `sys/class/
 Bij deze applicatie zal er enkel gekeken worden naar netwerkinterface `wlan0`. Adhv een select-option in HTML (client-side) zou men eventueel de gewenste interface kunnen kiezen (zie generatie in PHP-code) maar deze informatie kan niet opnieuw behandeld worden aan de server-side.
 
 [Link voor documentatie class net statistics](https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics)
+
+![Demonstratie applicatie](img/Demo.PNG)

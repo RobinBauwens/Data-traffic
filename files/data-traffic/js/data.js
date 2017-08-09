@@ -162,19 +162,7 @@ window.onload= function(){
  
 
 
-// Toe te voegen bij Bronnen.md
-
-//https://www.highcharts.com/docs/working-with-data/live-data
-//https://www.packtpub.com/mapt/book/web_development/9781783559688/1/ch01lvl1sec11/including-multiple-series-in-one-chart
-//https://stackoverflow.com/questions/19149166/call-php-function-from-javascript-and-send-parameter
-//https://www.highcharts.com/docs/chart-and-series-types/chart-types
-//https://stackoverflow.com/questions/11179406/jquery-get-value-of-select-onchange
-//https://unix.stackexchange.com/questions/125400/how-can-i-find-available-network-interfaces
-
 //https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics
-
-// Lay-out aanpassen
-// Tijd loopt nog op GMT, nog omzetten naar CET 
 };
 
 
