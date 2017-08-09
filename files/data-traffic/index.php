@@ -36,6 +36,9 @@ exit;
 }
 */
 echo "<br>";
+$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
+echo "<h2 class=text-center>Gegevens van interface: ", $int,"</h2>";
+
 echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/wlan0/statistics/rx_dropped"),"</h3>"; 
 
 //https://stackoverflow.com/questions/15774669/list-all-files-in-one-directory-php

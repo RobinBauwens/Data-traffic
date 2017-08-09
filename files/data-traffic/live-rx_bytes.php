@@ -7,10 +7,11 @@ header("Content-type: text/json");
 $x = (time() + 7200) * 1000; //time() geeft epoch waarde terug (UNIX-timestamp)
 
 //$y=exec("/home/pi/data_traffic/bitspersec.sh"); // duurt te lang om waarden op te halen?
+$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
 
-$rec=exec("cat /sys/class/net/wlan0/statistics/rx_bytes");
+$rec=exec("cat /sys/class/net/$int/statistics/rx_bytes");
 sleep(1);
-$rec2=exec("cat /sys/class/net/wlan0/statistics/rx_bytes");
+$rec2=exec("cat /sys/class/net/$int/statistics/rx_bytes");
 
 $y=$rec2-$rec; //ontvangen bytes
 
