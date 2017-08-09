@@ -3,15 +3,18 @@ body {
  /* https://www.toptal.com/designers/subtlepatterns/dark-triangles/ */
  font-family: GothamMedium;
  color: white;
-
 }
 
-div,ul, ul li,p {
+div,
+ul,
+ul li,
+p {
  color: white;
 }
 
-option,select {
-	color: black;
+option,
+select {
+ color: black;
 }
 
 hr {
@@ -39,14 +42,13 @@ hr {
  width: 90%;
 }
 
-
 @font-face {
  font-family: GothamMedium;
  src: url("../files/Gotham Medium Regular.ttf");
 }
 
 @media (max-device-width: 480px) {
-    h4 {
-    	font-size: 12px;
-    }
+ h4 {
+  font-size: 12px;
+ }
 }
