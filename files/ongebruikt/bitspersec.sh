@@ -17,7 +17,6 @@ else
 	fi
 fi
 
-
 while true
 	do
 	# Overlopen packets
@@ -27,7 +26,7 @@ while true
 	bytes_r=$(cat /sys/class/net/$interface/statistics/rx_bytes)
 	bytes_t=$(cat /sys/class/net/$interface/statistics/tx_bytes)
 
-	sleep 1 # 1 seconde wachten, meten bits/s
+	sleep 1 # 1 seconde wachten, meten bytes/s
 
 	packets_r2=$(cat /sys/class/net/"$interface"/statistics/rx_packets)
 	packets_t2=$(cat /sys/class/net/"$interface"/statistics/tx_packets)
