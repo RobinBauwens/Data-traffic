@@ -26,8 +26,6 @@
 
 - [PHP not executed (2)](https://stackoverflow.com/questions/12142172/apache-shows-php-code-instead-of-executing)
 
-
-
 - [Tonen ls (test)](https://stackoverflow.com/questions/15774669/list-all-files-in-one-directory-php)
 
 -[Tonen OS Windows of GNU/Linux]( https://stackoverflow.com/questions/5879043/php-script-detect-whether-running-under-linux-or-windows)
@@ -47,6 +45,13 @@
 
 -[Powershell adapter info](https://thesurlyadmin.com/2013/05/20/using-powershell-to-get-adapter-information/)
 
+- [Uitvoeren PowerShell (gebruik `shell_exec` ipv `exec` voor PowerShell)](https://stackoverflow.com/questions/5317315/executing-a-powershell-script-from-php)
+
+- [Pad naar PowerShell](https://stackoverflow.com/questions/4145232/path-to-powershell-exe-v-2-0)
+
+- [Run PowerShell from PHP](https://stackoverflow.com/questions/26509661/how-can-i-run-a-powershell-script-in-php)
+
+- [Run PowerShell](https://stackoverflow.com/questions/20727498/run-powershell-in-php)
 
 <!--
 ## Matplotlib (niet gebruikt)
