@@ -18,15 +18,15 @@ else
 fi
 
 while true
-	do
-	# Overlopen packets
+	do 	# Overlopen packets
+
 	packets_r=$(cat /sys/class/net/"$interface"/statistics/rx_packets) # ('test' || "test") != $(test)
 	packets_t=$(cat /sys/class/net/"$interface"/statistics/tx_packets)
 
 	bytes_r=$(cat /sys/class/net/$interface/statistics/rx_bytes)
 	bytes_t=$(cat /sys/class/net/$interface/statistics/tx_bytes)
 
-	sleep 1 # 1 seconde wachten, meten bytes/s
+	sleep 1 # 1 seconde wachten
 
 	packets_r2=$(cat /sys/class/net/"$interface"/statistics/rx_packets)
 	packets_t2=$(cat /sys/class/net/"$interface"/statistics/tx_packets)
@@ -42,10 +42,8 @@ while true
 	let verzondenBytes=$bytes_t2-$bytes_t
 	
 	echo 'Ontvangen packets: ' $ontvangenPackets
-	echo 'Verzonden packets: ' $verzondenPackets
-	
+	echo 'Verzonden packets: ' $verzondenPackets	
 	echo
-
 	echo 'Ontvangen bytes: ' $ontvangenBytes
 	echo 'Verzonden bytes: ' $verzondenBytes
 done
