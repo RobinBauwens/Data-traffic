@@ -1,0 +1,1 @@
+netsh interface show interface | Select-String -Pattern "Enabled        Connected" | Select-Object -first 1
