@@ -12,7 +12,3 @@ Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/D
 ![Demonstratie applicatie](img/Demo.PNG)
 
 ![Demonstratie applicatie KDE Neon](img/KDE-Neon.png)
-
-![Demonstratie applicatie KDE Neon](img/KDE-Neon2.png)
-
-![Demonstratie applicatie KDE Neon](img/KDE-Neon3.png)
