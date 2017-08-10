@@ -30,9 +30,7 @@ window.onload = function () {
    {
     name: 'Verstuurde bytes',
     data: []
-        }
-
-        ]
+   }]
  });
 
  var chart2 = new Highcharts.Chart({
@@ -66,16 +64,8 @@ window.onload = function () {
    {
     name: 'Verstuurde packets',
     data: []
-        }
-
-        ]
+   }]
  });
-
-
-
-
-
-
 
  function requestPackets() {
   requestDataRX_Packets();
@@ -86,7 +76,6 @@ window.onload = function () {
   requestDataRX_Bytes();
   requestDataTX_Bytes();
  }
-
 
  function requestDataRX_Bytes() {
   $.ajax({
@@ -123,8 +112,6 @@ window.onload = function () {
   });
  }
 
-
-
  function requestDataRX_Packets() {
   $.ajax({
    url: 'live-rx_packets.php',
@@ -159,8 +146,4 @@ window.onload = function () {
    cache: false
   });
  }
-
-
-
- //https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics
 };
