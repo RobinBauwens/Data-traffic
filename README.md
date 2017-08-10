@@ -34,3 +34,7 @@ De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-ver
 ![Demonstratie applicatie](img/Demo.PNG)
 
 ![Demonstratie applicatie KDE Neon](img/KDE-Neon.png)
+
+![Demonstratie applicatie Raspbian](img/Raspbian.PNG)
+
+![Demonstratie applicatie Windows 10](img/Windows 10.PNG)

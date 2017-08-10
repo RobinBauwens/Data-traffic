@@ -46,7 +46,7 @@ $runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 exec($runCMD, $out);
 $intnaam=join($out);
 
-	echo "<h2 class=text-center>Gegevens van netwerk: ", $intnaam,"</h2>";
+	echo "<h2 class=text-center>Gegevens van netwerkinterface: ", $intnaam,"</h2>";
 
 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
     //echo 'This is a server using Windows!';
