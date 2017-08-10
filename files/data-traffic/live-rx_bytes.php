@@ -10,10 +10,9 @@ $x = (time() + 7200) * 1000; //time() geeft epoch waarde terug (UNIX-timestamp)
 
 
 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') { //Windows
-
-
+	
 $psPath = 'c:\\Windows\\System32\WindowsPowerShell\v1.0\\powershell.exe';
-$psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\";
+$psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\files\\PowerShell\\";
 $psScript = "show_rx_bytes.ps1";
 $runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 

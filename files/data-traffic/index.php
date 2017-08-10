@@ -38,7 +38,7 @@ exit;
   echo "<br>";
 
 $psPath = 'c:\\Windows\\System32\WindowsPowerShell\v1.0\\powershell.exe';
-$psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\";
+$psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\files\\PowerShell\\";
 $psScript = "show_active_interface.ps1";
 $runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 
@@ -57,7 +57,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 
 } else {
 
-    echo 'This is a server not using Windows!';
+    //echo 'This is a server not using Windows!';
  
 	$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
 	echo "<h2 class=text-center>Gegevens van interface: ", $int,"</h2>";
@@ -69,7 +69,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 
 
 /*
-Om te testen
+Om te testen: probleem lag bij join (uitvoer) bij exec()
 Gebruik echo shell_exec ipv exec met output
 $psPath = 'c:\\Windows\\System32\WindowsPowerShell\v1.0\\powershell.exe';
 $psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\";
