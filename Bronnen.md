@@ -66,6 +66,8 @@
 
 - [Plotting time](https://stackoverflow.com/questions/1574088/plotting-time-in-python-with-matplotlib)
 
+- [Screenfetch Windows 10](https://github.com/JulianChow94/Windows-screenFetch)
+
  ## Python (niet gebruikt)
  
  - [str.replace()](https://www.tutorialspoint.com/python/string_replace.htm)
