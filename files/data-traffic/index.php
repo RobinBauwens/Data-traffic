@@ -36,7 +36,6 @@ exit;
 }
 */
 
-<<<<<<< HEAD
 
 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
     echo 'This is a server using Windows!';
@@ -51,13 +50,6 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {
 
 	echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/wlan0/statistics/rx_dropped"),"</h3>"; 
 }
-=======
-echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$int/statistics/rx_dropped"),"</h3>"; 
->>>>>>> 85aaca684fcb6aab05ca354d36f312994af5ee8e
 
-//https://stackoverflow.com/questions/15774669/list-all-files-in-one-directory-php
 
-//toe te voegen
-
-//https://stackoverflow.com/questions/5879043/php-script-detect-whether-running-under-linux-or-windows	 
 ?>
