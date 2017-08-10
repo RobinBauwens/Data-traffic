@@ -1,8 +1,11 @@
 #!/bin/bash
 
-sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt #raspbian
 sudo apt-get update
 sudo apt-get install apache2
+sudo apt-get install libapache2-mod-php                   # Getest op KDE Neon
+
+sudo systemctl restart apache2
 
 #curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 #sudo apt install nodejs

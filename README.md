@@ -10,3 +10,5 @@ Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/D
 [Link voor documentatie class net statistics](https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics)
 
 ![Demonstratie applicatie](img/Demo.PNG)
+
+![Demonstratie applicatie KDE Neon](img/KDE-Neon.png)

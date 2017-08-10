@@ -14,6 +14,12 @@
 -[Netwerkinterfaces](https://unix.stackexchange.com/questions/125400/how-can-i-find-available-network-interfaces)
 -[Gebruikte netwerkinterfaces tonen](https://stackoverflow.com/questions/596590/how-can-i-get-the-current-network-interface-throughput-statistics-on-linux-unix)
 
+-[Apache .conf file](https://stackoverflow.com/questions/12202021/where-is-my-httpd-conf-file-located-apache)
+- [PHP not executed](https://stackoverflow.com/questions/5121495/php-code-is-not-being-executed-instead-code-shows-on-the-page)
+- [PHP not executed (2)](https://stackoverflow.com/questions/12142172/apache-shows-php-code-instead-of-executing)
+
+
+
 <!--
 ## Matplotlib (niet gebruikt)
 
