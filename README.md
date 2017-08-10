@@ -37,4 +37,4 @@ De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-ver
 
 ![Demonstratie applicatie Raspbian](img/Raspbian.PNG)
 
-![Demonstratie applicatie Windows 10](img/Windows 10.PNG)
+![Demonstratie applicatie Windows 10](img/Windows&#32;10.PNG)
