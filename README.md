@@ -5,7 +5,10 @@ Er worden een aantal statistieken (bestanden) beschikbaar gesteld in `sys/class/
 
 Bij deze applicatie zal er enkel gekeken worden naar netwerkinterface `wlan0`. Adhv een select-option in HTML (client-side) zou men eventueel de gewenste interface kunnen kiezen (zie generatie in PHP-code) maar deze informatie kan niet opnieuw behandeld worden aan de server-side.
 
-Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/Debian (`apt-get`).
+Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/Debian (`apt-get`). Indien je Fedora/CentOs gebruikt kan je `dnf` of `yum` gebruiken, voor Arch Linux `pacman`, etc. (let wel op de eventuele andere benaming).
+
+**Windows-versie is momenteel nog WIP.**
+
 
 [Link voor documentatie class net statistics](https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics)
 
