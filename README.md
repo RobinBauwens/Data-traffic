@@ -1,6 +1,8 @@
 # Data traffic
 Tonen van dataverkeer (verzonden en ontvangen bytes & IP-packets) van de actieve netwerkinterface.
 
+De grafieken worden gegenereerd a.d.h.v. [HighCharts.js](https://www.highcharts.com/)
+
 
 Er worden een aantal statistieken (bestanden) beschikbaar gesteld (Linux) in `sys/class/net/$INTERFACE/statistics`. Met `$INTERFACE` bijvoorbeeld `eth0`, `lo` of `wlan0`.
 
