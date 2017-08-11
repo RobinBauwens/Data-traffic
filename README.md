@@ -1,7 +1,7 @@
 # Data traffic
 Tonen van dataverkeer (verzonden en ontvangen bytes & IP-packets) van de actieve netwerkinterface.
 
-De grafieken worden gegenereerd a.d.h.v. [HighCharts.js](https://www.highcharts.com/)
+De grafieken worden gegenereerd a.d.h.v. [HighCharts.js](https://www.highcharts.com/).
 
 
 Linux: Er worden een aantal statistieken (bestanden) beschikbaar gesteld in `sys/class/net/$INTERFACE/statistics`. Met `$INTERFACE` bijvoorbeeld `eth0`, `lo` of `wlan0`.
@@ -36,6 +36,8 @@ De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-ver
 ![Demonstratie applicatie](img/Demo.PNG)
 
 ![Demonstratie applicatie KDE Neon](img/KDE-Neon.png)
+
+![Demonstratie applicatie KDE Neon](img/KDE-Neon2.png)
 
 ![Demonstratie applicatie Raspbian](img/Raspbian.PNG)
 
