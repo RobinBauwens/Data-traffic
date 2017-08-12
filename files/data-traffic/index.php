@@ -16,7 +16,12 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 
 	//echo count($gesplitst);
 
+
+
 	if (count($gesplitst) > 2){ // >2 ipv >1 want er zit in de Windows-versie ook een whitespace als element
+
+			echo "<h3 class=text-center>Gegevens van eerste netwerkinterface: ", $gesplitst[0], "</h3>";
+		echo "<h3 class=text-center id=tweedeAanwezig>Gegevens van tweede netwerkinterface: ", $gesplitst[1], "</h3>";
 
 		// Eventueel een forEach hier?
 		// echo $gesplitst[0], " en ", $gesplitst[1];	
@@ -25,12 +30,12 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 		echo  "<div id=containers class=center-block>"," <div id=container style=width:100%; height:400px;></div>";
  		echo "<br>";
  		echo  "<div id=container2 style=width:100%; height:400px;></div></div>";
-		echo "<h3 class=text-center>Gegevens van eerste netwerkinterface: ", $gesplitst[0], "</h3>";
+		
 
 		echo  "<div id=extraContainers class=center-block>","<div id=extraContainer style=width:100%; height:400px;></div>";
  		echo "<br>";
  		echo  "<div id=extraContainer2 style=width:100%; height:400px;></div></div>";
-		echo "<h3 class=text-center>Gegevens van tweede netwerkinterface: ", $gesplitst[1], "</h3>";
+		
 	*/
 	}
 
@@ -41,6 +46,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
  		echo  "<div id=container2 style=width:100%; height:400px;></div></div>";
 		echo "<h3 class=text-center>Gegevens van netwerkinterface: ", $output, "</h3>";
 		*/
+			echo "<h3 class=text-center>Gegevens van netwerkinterface: ", $gesplitst[0], "</h3>";
 		}
 
 
