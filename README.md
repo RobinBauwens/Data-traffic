@@ -20,7 +20,7 @@ De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-ver
 
 ## Requirements:
 
-- Windows: installeer en start XAMPP (andere stacks zoals WAMP zijn ook mogelijk) om PHP en Apache te installeren, kopieer directory [data-traffic van deze repository](https://github.com/RobinBauwens/Data-traffic/tree/master/files/data-traffic) hierin. Je pad moet er zoiets uitzien: `C:\XAMPP\htdocs\data-traffic` en je kan de website raadplegen via `http://localhost/data-traffic/index.php`, `http://192.168.0.160/data-traffic/index.php` of [http://127.0.0.1/data-traffic/index.php](http://127.0.0.1/data-traffic/index.php) (of ander IP-adres tussen `127.0.0.1` en `127.255.255.254`).
+- Windows: installeer en start XAMPP (andere stacks zoals WAMP zijn ook mogelijk) om PHP en Apache te installeren, kopieer directory [data-traffic van deze repository](https://github.com/RobinBauwens/Data-traffic/tree/master/files/data-traffic) hierin. Je pad moet er zoiets uitzien: `C:\XAMPP\htdocs\data-traffic` en je kan de website o.a. raadplegen via `http://localhost/data-traffic/index.php` of [http://127.0.0.1/data-traffic/index.php](http://127.0.0.1/data-traffic/index.php) (of ander IP-adres tussen `127.0.0.1` en `127.255.255.254`).
 
 **Opmerking:** De code die in deze repository gebruikt wordt verwijst naar `D:\XAMPP\XAMPP\htdocs\` (zie PHP-code), dit zal afwijken van de standaardlocatie van de XAMPP installatie `C:\XAMPP\htdocs\`.
 
