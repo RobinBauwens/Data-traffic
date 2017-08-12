@@ -17,7 +17,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') { // Windows
 
 	$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
 	echo "<h2 class=text-center>Gegevens van netwerkinterface: ", $int,"</h2>";
-	echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/wlan0/statistics/rx_dropped"),"</h3>"; 
+	echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$int/statistics/rx_dropped"),"</h3>"; 
 }
 
 /*
