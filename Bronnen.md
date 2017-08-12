@@ -12,6 +12,10 @@
 
 - [Meerdere series in 1 grafiek](https://www.packtpub.com/mapt/book/web_development/9781783559688/1/ch01lvl1sec11/including-multiple-series-in-one-chart)
 
+- [Controleren of <div> bestaat, adhv PHP (indien h3 gegenereerd werd zijn er meerdere netwerkinterfaces)](https://stackoverflow.com/questions/10886190/check-if-a-div-does-not-exist-with-javascript)
+
+- [Explode(), split() is deprecated](http://php.net/manual/en/function.explode.php)
+
 
 ## GNU/Linux
 
@@ -63,6 +67,8 @@
 - [Run PowerShell from PHP](https://stackoverflow.com/questions/26509661/how-can-i-run-a-powershell-script-in-php)
 
 - [Run PowerShell](https://stackoverflow.com/questions/20727498/run-powershell-in-php)
+
+- [Sort-Object, zo voorkom je dat de output random wordt (nodig voor meerdere interfaces)](https://technet.microsoft.com/en-us/library/ee176968.aspx)
 
 
 <!--

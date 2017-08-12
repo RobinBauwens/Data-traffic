@@ -18,6 +18,8 @@ Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/D
 
 De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-versie daar minder dan 5 seconden over doet.
 
+Ondersteuning voor meerdere verbonden netwerkinterfaces (Wi-Fi en Ethernet) zijn momenteel nog WIP. **Windows-versie is afgewerkt.**
+
 ## Requirements:
 
 - Windows: installeer en start XAMPP (andere stacks zoals WAMP zijn ook mogelijk) om PHP en Apache te installeren, kopieer directory [data-traffic van deze repository](https://github.com/RobinBauwens/Data-traffic/tree/master/files/data-traffic) hierin. Je pad moet er zoiets uitzien: `C:\XAMPP\htdocs\data-traffic` en je kan de website o.a. raadplegen via `http://localhost/data-traffic/index.php` of [http://127.0.0.1/data-traffic/index.php](http://127.0.0.1/data-traffic/index.php) (of ander IP-adres tussen `127.0.0.1` en `127.255.255.254`).
