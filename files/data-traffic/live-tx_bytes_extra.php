@@ -11,7 +11,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') { //Windows
 	
 $psPath = 'c:\\Windows\\System32\WindowsPowerShell\v1.0\\powershell.exe';
 $psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\files\\PowerShell\\";
-$psScript = "show_tx_bytes.ps1";
+$psScript = "show_tx_bytes_extra.ps1";
 $runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 
 $tr=shell_exec($runCMD);

@@ -11,27 +11,27 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') { //Windows
 	
 $psPath = 'c:\\Windows\\System32\WindowsPowerShell\v1.0\\powershell.exe';
 $psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\files\\PowerShell\\";
-$psScript = "show_tx_bytes.ps1";
+$psScript = "show_rx_packets_extra.ps1";
 $runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 
-$tr=shell_exec($runCMD);
+$rec=shell_exec($runCMD);
 
 sleep(1);
 
-$tr2=shell_exec($runCMD);
+$rec2=shell_exec($runCMD);
 
 } else { //Linux
 
 //$y=exec("/home/pi/data_traffic/bitspersec.sh"); // duurt te lang om waarden op te halen?
 $int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
 
-$tr=exec("cat /sys/class/net/$int/statistics/tx_bytes");
+$rec=exec("cat /sys/class/net/$int/statistics/rx_packets");
 sleep(1);
-$tr2=exec("cat /sys/class/net/$int/statistics/tx_bytes");
+$rec2=exec("cat /sys/class/net/$int/statistics/rx_packets");
 
 }
 
-$y=$tr2-$tr; //ontvangen bytes
+$y=$rec2-$rec; //ontvangen bytes
 
 // Create a PHP array and echo it as JSON
 $ret = array($x, $y);
