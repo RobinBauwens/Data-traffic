@@ -43,4 +43,4 @@ De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-ver
 
 ![Demonstratie applicatie Windows 10](img/Wi-Fi&#32;Windows&#32;10.PNG)
 
-![Demonstratie applicatie Windows 10](img/Ethernet#32;Windows&#32;10.PNG)
+![Demonstratie applicatie Windows 10](img/Ethernet&#32;Windows&#32;10.PNG)
