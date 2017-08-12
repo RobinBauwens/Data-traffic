@@ -18,7 +18,7 @@ Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/D
 
 De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-versie daar minder dan 5 seconden over doet.
 
-Ondersteuning voor meerdere verbonden netwerkinterfaces (Wi-Fi en Ethernet) zijn momenteel nog WIP. **Windows-versie is afgewerkt.**
+Ondersteuning voor meerdere verbonden netwerkinterfaces (Wi-Fi en Ethernet) is momenteel nog WIP. **Windows-versie is afgewerkt.**
 
 ## Requirements:
 

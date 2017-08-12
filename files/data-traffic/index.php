@@ -12,9 +12,9 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 	$runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 
 	$output=shell_exec($runCMD);
-	$gesplitst=explode("\n",$output);
+	$gesplitst=explode("\n",$output); //TODO $gesplitst[2] verwijderen, is altijd een whitespace
 
-	if (count($gesplitst) > 2){ // >2 ipv >1 want er zit in de Windows-versie ook een whitespace als element
+	if (count($gesplitst) > 2){ // > 2 ipv > 1 want er zit in de Windows-versie ook een whitespace als element
 
 		echo "<h3 class=text-center>Gegevens van eerste netwerkinterface: ", $gesplitst[0], "</h3>";
 		echo "<h3 class=text-center id=tweedeAanwezig>Gegevens van tweede netwerkinterface: ", $gesplitst[1], "</h3>";

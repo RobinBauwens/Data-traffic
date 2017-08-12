@@ -33,7 +33,8 @@ hr {
  font-size: 14px;
 }
 
-#containers, #extraContainers {
+#containers,
+#extraContainers {
  width: 90%;
 }
 
