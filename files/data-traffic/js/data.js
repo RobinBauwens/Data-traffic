@@ -172,7 +172,7 @@ var myElem = document.getElementById('extraContainers'); // werkt niet?
 var myElem = document.getElementById('tweedeAanwezig');
   if (myElem !== null) {
 
-art3 = new Highcharts.Chart({ // Maak sowieso al 2 grafieken, deze bevatten de data van de eerste netwerkinterface
+var chart3 = new Highcharts.Chart({
   chart: {
    renderTo: 'extraContainer',
    type: 'area',
@@ -266,7 +266,7 @@ function requestPacketsExtra() {
      shift = series.data.length > 20; // shift if the series is 
     // longer than 20
     // add the point
-    chart.series[0].addPoint(point, true, shift);
+    chart3.series[0].addPoint(point, true, shift);
 
     // call it again after one second
     setTimeout(requestDataRX_BytesExtra, 1000);
@@ -284,7 +284,7 @@ function requestPacketsExtra() {
     // longer than 20
 
     // add the point
-    chart.series[1].addPoint(point, true, shift);
+    chart3.series[1].addPoint(point, true, shift);
 
     // call it again after one second
     setTimeout(requestDataTX_BytesExtra, 1000);
