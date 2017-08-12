@@ -330,14 +330,11 @@ function requestPacketsExtra() {
   });
  }
 
-  } // einde if normaal extra hier
+  }
 
-else {
+else { // Als #tweedeAanwezig (h3) niet gegenereerd wordt door index.php dan is er geen tweede netwerkinterface in gebruik
   $("#extraContainers").hide();
 }
-
-
-
 
 
 };
