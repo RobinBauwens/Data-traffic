@@ -39,6 +39,11 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
         
         echo "<h3 class=text-center>Gegevens van eerste netwerkinterface: ", $eersteInterface, "</h3>";
 		echo "<h3 class=text-center id=tweedeAanwezig>Gegevens van tweede netwerkinterface: ", $tweedeInterface, "</h3>";
+		
+		echo "<br>";
+		
+		echo "<h4 class=text-center>Interface ",$eersteInterface,": aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$eersteInterface/statistics/rx_dropped"),"</h4>"; 
+		echo "<h4 class=text-center>Interface ",$tweedeInterface,": aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$tweedeInterface/statistics/rx_dropped"),"</h4>"; 
 	
 	}
 	else {
@@ -46,8 +51,10 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 	$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1"); // om zeker te zijn van maar 1 output line
 	echo $int;
 	echo "<h2 class=text-center>Gegevens van interface: ", $int,"</h2>";
+	
+	echo "<br>";
 
-	echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/wlan0/statistics/rx_dropped"),"</h3>"; 
+	echo "<h4 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$int/statistics/rx_dropped"),"</h4>"; 
 	}
 }
 
