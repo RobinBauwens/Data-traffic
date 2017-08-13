@@ -27,6 +27,7 @@
 
 - [Locatie packets per second-bestanden](http://xmodulo.com/measure-packets-per-second-throughput-high-speed-network-interface.html)
 
+- [Eerste lijn uit output halen](http://www.unix.com/shell-programming-and-scripting/146293-select-always-first-row.html)
 
 ## PHP en Apache
 

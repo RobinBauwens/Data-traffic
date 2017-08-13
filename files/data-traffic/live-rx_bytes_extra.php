@@ -22,7 +22,7 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') { //Windows
 
 } else { //Linux
 
-$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
+$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | tail -1");
 
 $rec=exec("cat /sys/class/net/$int/statistics/rx_bytes");
 sleep(1);

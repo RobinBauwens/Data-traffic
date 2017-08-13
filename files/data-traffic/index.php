@@ -30,10 +30,25 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 
     //echo 'This is a server not using Windows!';
  
-	$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
+	$aantalInterfaces=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | wc -l");
+	
+	if ($aantalInterfaces == 2){
+	
+        $eersteInterface=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1");
+        $tweedeInterface=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | tail -1");
+        
+        echo "<h3 class=text-center>Gegevens van eerste netwerkinterface: ", $eersteInterface, "</h3>";
+		echo "<h3 class=text-center id=tweedeAanwezig>Gegevens van tweede netwerkinterface: ", $tweedeInterface, "</h3>";
+	
+	}
+	else {
+	
+	$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1"); // om zeker te zijn van maar 1 output line
+	echo $int;
 	echo "<h2 class=text-center>Gegevens van interface: ", $int,"</h2>";
 
 	echo "<h3 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/wlan0/statistics/rx_dropped"),"</h3>"; 
+	}
 }
 
 ?>

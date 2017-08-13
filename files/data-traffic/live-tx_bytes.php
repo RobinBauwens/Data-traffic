@@ -23,7 +23,7 @@ $tr2=shell_exec($runCMD);
 } else { //Linux
 
 //$y=exec("/home/pi/data_traffic/bitspersec.sh"); // duurt te lang om waarden op te halen?
-$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
+$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1");
 
 $tr=exec("cat /sys/class/net/$int/statistics/tx_bytes");
 sleep(1);

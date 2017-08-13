@@ -24,7 +24,7 @@ $rec2=shell_exec($runCMD);
 
 } else { //Linux
 
-$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g'");
+$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1");
 
 $rec=exec("cat /sys/class/net/$int/statistics/rx_bytes");
 sleep(1);
