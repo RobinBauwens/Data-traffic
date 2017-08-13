@@ -43,6 +43,8 @@
 
 - [Tonen OS Windows of GNU/Linux]( https://stackoverflow.com/questions/5879043/php-script-detect-whether-running-under-linux-or-windows)
 
+- [Strip whitespace in array](https://stackoverflow.com/questions/3384058/how-do-you-strip-whitespace-from-an-array-using-php)
+
 
 ## PowerShell
 

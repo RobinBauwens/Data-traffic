@@ -4,17 +4,18 @@ include 'index.html';
 
 if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 
-    //echo 'This is a server using Windows!';
-
     $psPath = 'c:\\Windows\\System32\WindowsPowerShell\v1.0\\powershell.exe';
 	$psDIR = "D:\\XAMPP\\XAMPP\\htdocs\\data-traffic\\files\\PowerShell\\";
 	$psScript = "show_active_interface.ps1";
 	$runCMD = $psPath. ' -ExecutionPolicy RemoteSigned '.$psDIR.$psScript;
 
 	$output=shell_exec($runCMD);
-	$gesplitst=explode("\n",$output); //TODO $gesplitst[2] verwijderen, is altijd een whitespace
+	$gesplitst=explode("\n",$output);
+	$gesplitst=array_filter(array_map('trim', $gesplitst)); // Voorkomen van whitespace op gesplitst[2]
 
-	if (count($gesplitst) > 2){ // > 2 ipv > 1 want er zit in de Windows-versie ook een whitespace als element
+	$aantal=count($gesplitst);
+
+	if ($aantal == 2){
 
 		echo "<h3 class=text-center>Gegevens van eerste netwerkinterface: ", $gesplitst[0], "</h3>";
 		echo "<h3 class=text-center id=tweedeAanwezig>Gegevens van tweede netwerkinterface: ", $gesplitst[1], "</h3>";
@@ -27,8 +28,6 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 
 
 } else {	// Linux
-
-    //echo 'This is a server not using Windows!';
  
 	$aantalInterfaces=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | wc -l");
 	
@@ -48,13 +47,13 @@ if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') {	// Windows
 	}
 	else {
 	
-	$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1"); // om zeker te zijn van maar 1 output line
-	echo $int;
-	echo "<h2 class=text-center>Gegevens van interface: ", $int,"</h2>";
-	
-	echo "<br>";
+		$int=exec("ip -d link | grep 'state UP' | cut -d' ' -f2 | sed 's/://g' | sort -n | head -1"); // om zeker te zijn van maar 1 output line
+		echo $int;
+		echo "<h3 class=text-center>Gegevens van interface: ", $int,"</h3>";	
 
-	echo "<h4 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$int/statistics/rx_dropped"),"</h4>"; 
+		echo "<br>";
+
+		echo "<h4 class=text-center>Aantal RX_DROPPED (sinds opstart): ", exec("cat /sys/class/net/$int/statistics/rx_dropped"),"</h4>"; 
 	}
 }
 
