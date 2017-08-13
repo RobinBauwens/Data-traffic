@@ -6,7 +6,7 @@ De grafieken worden gegenereerd a.d.h.v. [HighCharts.js](https://www.highcharts.
 
 Linux: Er worden een aantal statistieken (bestanden) beschikbaar gesteld in `sys/class/net/$INTERFACE/statistics`. Met `$INTERFACE` bijvoorbeeld `eth0`, `lo` of `wlan0`.
 
-Windows: Deze statistieken kunnen opgevraagd worden door enkele commando's zoals `Get-NetAdapterStatistics` en `Get-NetAdapter`. Ook wordt er in de scripts op enkele virtuele interfaces gefilterd zoals die van VirtualBox zodat deze afgezonderd worden van de "echte", gebruikte netwerkinterfaces.
+Windows: Deze statistieken kunnen opgevraagd worden door enkele commando's zoals `Get-NetAdapterStatistics` en `Get-NetAdapter`. Ook wordt er in de scripts op enkele virtuele interfaces gefilterd (zoals die van VirtualBox, enkel in Windows-versie) zodat deze afgezonderd worden van de "echte", gebruikte netwerkinterfaces.
 
 Bij deze applicatie zal er dus enkel gekeken worden naar de niet-virtuele en gebruikte netwerkinterface.
 
