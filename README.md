@@ -18,7 +18,7 @@ Werkt momenteel enkel voor UNIX-like systemen met package manager zoals Ubuntu/D
 
 De Windows-versie duurt ongeveer 15 seconden om te updaten, terwijl de Linux-versie daar minder dan 5 seconden over doet.
 
-Ondersteuning voor meerdere verbonden netwerkinterfaces (Wi-Fi en Ethernet) is momenteel nog WIP. **Windows-versie is afgewerkt.**
+Ondersteuning voor 2 netwerkinterfaces (Wi-Fi en Ethernet) is nu toegevoegd. Zie afbeeldingen onderaan voor Windows en Linux.
 
 ## Requirements:
 
@@ -28,21 +28,31 @@ Ondersteuning voor meerdere verbonden netwerkinterfaces (Wi-Fi en Ethernet) is m
 
 - Linux: installeer alle programma's (PHP en eventueel Apache) via `install_programs.sh`, kopieer directory [data-traffic van deze repository](https://github.com/RobinBauwens/Data-traffic/tree/master/files/data-traffic) naar `/var/www/html` **(root privileges nodig!)** en bezoek een van de links hierboven.
 
-### Getest op:
-
-- Windows 10 (via XAMPP)
-- Raspbian
-- KDE Neon
-
-
 [Link voor documentatie class net statistics](https://www.kernel.org/doc/Documentation/ABI/testing/sysfs-class-net-statistics)
+
 
 ![Demonstratie applicatie](img/Demo.PNG)
 
-![Demonstratie applicatie KDE Neon](img/KDE-Neon.png)
 
-![Demonstratie applicatie Raspbian](img/Raspbian.PNG)
+### Getest op:
+
+#### Windows 10 (via XAMPP)
 
 ![Demonstratie applicatie Windows 10](img/Wi-Fi&#32;Windows&#32;10.PNG)
 
 ![Demonstratie applicatie Windows 10](img/Ethernet&#32;Windows&#32;10.PNG)
+
+![Demonstratie applicatie Windows 10](img/Dual_Monitors_Windows_10.PNG)
+
+#### Raspbian
+
+![Demonstratie applicatie Raspbian](img/Raspbian.PNG)
+
+#### KDE Neon
+
+![Demonstratie applicatie KDE Neon](img/KDE-Neon.png)
+
+![Demonstratie applicatie KDE Neon](img/Dual_Monitors_KDE_Neon.png)
+
+
+
