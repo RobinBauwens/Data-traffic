@@ -73,6 +73,9 @@
 
 - [Sort-Object, zo voorkom je dat de output random wordt (nodig voor meerdere interfaces)](https://technet.microsoft.com/en-us/library/ee176968.aspx)
 
+- [Whitespace verwijderen](https://stackoverflow.com/questions/24355760/removing-spaces-from-a-variable-thats-user-inputted-in-powershell-4-0)
+
+- [Line break verwijderen](https://stackoverflow.com/questions/22238465/removing-line-break-powershell)
 
 <!--
 ## Matplotlib (niet gebruikt)
